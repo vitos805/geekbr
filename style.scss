@@ -4,9 +4,10 @@
 }
 body {
   font-family: "Avenir Next", "Arial", sans-serif;
+  width: 100%;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 .header {
@@ -18,7 +19,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 135px 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .menu {
   display: flex;
@@ -41,7 +43,8 @@ body {
 .blok1_wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 66px 175px 188px 127px;
+  padding-top: 66px;
+  padding-bottom: 188px;
 }
 .blok1_text {
   width: 470px;
@@ -111,8 +114,9 @@ h1 {
 }
 .blok2_wrapper {
   display: flex;
-  justify-content: space-between;
-  padding: 150px 235px;
+  justify-content: space-around;
+  padding-top: 150px;
+  padding-bottom: 150px;
   align-items: center;
 }
 .blok2_img {
@@ -145,7 +149,8 @@ h2 {
 .blok3_wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 190px 335px 150px 135px;
+  padding-top: 190px;
+  padding-bottom: 150px;
 }
 ul.block3_list {
   list-style: none;
@@ -178,7 +183,8 @@ ul.block3_list {
 .card_blok_wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 150px 135px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .card {
   width: 370px;
@@ -221,7 +227,8 @@ h3 {
   background: url(images/bg-blok5.svg);
 }
 .blok5_wrapper {
-  padding: 190px 0;
+  padding-top: 190px;
+  padding-bottom: 190px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -276,7 +283,8 @@ ul.list_line {
 .footer_info {
   display: flex;
   justify-content: space-around;
-  padding: 70px 135px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   align-items: top;
 }
 .Logo_footer {
@@ -300,5 +308,57 @@ ul.list_line {
   opacity: 0.2;
 }
 .copy {
-  padding: 36px 135px;
+  padding: 36px 0;
+}
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .card_blok_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .header_wrapper {
+    flex-direction: column;
+  }
+  .menu {
+    margin-top: 20px;
+  }
+  .blok1_wrapper {
+    flex-direction: column;
+  }
+  .blok1_text {
+    width: 100%;
+  }
+  .blok1_paragraf {
+    width: 100%;
+  }
+  .blok1_img {
+    margin-top: 50px;
+  }
+  .blok2_wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .blok2_text {
+    margin-top: 50px;
+  }
+  .blok3_wrapper {
+    flex-direction: column;
+  }
+  .blok3_text {
+    width: 100%;
+  }
+  .footer_info {
+    flex-direction: column;
+  }
+  ul.list_line {
+    flex-direction: column;
+  }
 }
