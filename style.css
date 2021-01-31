@@ -452,6 +452,9 @@ ul.list_line {
   .menu {
     margin-top: 20px;
   }
+  .menu a {
+    margin-left: 20px;
+  }
   .blok1_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
